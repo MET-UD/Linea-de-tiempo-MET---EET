@@ -25,7 +25,7 @@ export interface TimelineEvent {
   fullText: string;
   resolution?: string;
   subItems?: Array<{ subtitle: string; content: string }>;
-  stats?: { presencial: number; virtual: number; total: number };
+  stats?: { presencial?: number; virtual?: number; total: number };
   bibliographic?: {
     authors?: string[];
     editorial?: string;
@@ -177,24 +177,6 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
   },
 
   // ─────────────────────────────────────────────
-  // 1999
-  // ─────────────────────────────────────────────
-  {
-    id: 'ev-1999',
-    year: 1999,
-    yearDisplay: '1999',
-    title: 'Creación del Grupo de Investigación DIDACTEC',
-    category: 'investigacion',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '1991-1999',
-    periodLabel: 'Génesis y Creación Institucional',
-    summary: 'Nace el grupo de investigación DIDACTEC como unidad investigativa articulada a la Especialización en Educación en Tecnología.',
-    fullText: 'Se crea el grupo de investigación DIDACTEC (Didáctica de la Tecnología) dentro de la Universidad Distrital Francisco José de Caldas. Con el desarrollo del posgrado, el grupo se vinculó como la principal unidad y línea de investigación del proyecto curricular de Especialización.',
-    highlight: true,
-  },
-
-  // ─────────────────────────────────────────────
   // 2000
   // ─────────────────────────────────────────────
   {
@@ -207,8 +189,8 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     program: 'especializacion',
     period: '2000-2009',
     periodLabel: 'Consolidación Pedagógica y Teleeducación',
-    summary: 'Investigación, modelo 1 a 1 y consolidación conceptual en educación en tecnología.',
-    fullText: 'Investigación, modelo 1 a 1 y consolidación conceptual:\n\n• Grupo DIDACTEC (Didáctica de la tecnología) y Computadores para Educar: Nace el grupo de investigación Didatec, participando en iniciativas de formación e investigación junto al programa Computadores para Educar (Ministerio de TIC y MEN).\n\n• Experiencia en Castilla La Nueva: Se lidera la primera experiencia formativa e investigativa con el modelo 1 a 1 en el país, obteniendo el segundo puesto en el Premio Nacional de Investigación Riviere.',
+    summary: 'Investigación, modelo 1 a 1 y consolidación conceptual',
+    fullText: 'Investigación, modelo 1 a 1 y consolidación conceptual',
     highlight: true,
   },
 
@@ -291,114 +273,6 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
   },
 
   // ─────────────────────────────────────────────
-  // 2003
-  // ─────────────────────────────────────────────
-  {
-    id: 'ev-2003-ambientes',
-    year: 2003,
-    yearDisplay: '2003',
-    title: 'Consolidación de Ambientes Virtuales de Aprendizaje y Teleeducación',
-    category: 'investigacion',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '2000-2009',
-    periodLabel: 'Consolidación Pedagógica y Teleeducación',
-    summary: 'Avance de las líneas de investigación en teleeducación y ambientes virtuales de aprendizaje en el grupo DIDACTEC y la Especialización.',
-    fullText: 'En el año 2003, el grupo de investigación DIDACTEC y los docentes de la Especialización en Educación en Tecnología consolidaron las líneas de investigación en teleeducación, producción de material didáctico computarizado y desarrollo de ambientes virtuales de aprendizaje en la Universidad Distrital Francisco José de Caldas.',
-    highlight: false,
-  },
-
-  // ─────────────────────────────────────────────
-  // 2004
-  // ─────────────────────────────────────────────
-  {
-    id: 'ev-2004-didacticos',
-    year: 2004,
-    yearDisplay: '2004',
-    title: 'Diseño e Integración Curricular de Objetos de Aprendizaje',
-    category: 'institucional',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '2000-2009',
-    periodLabel: 'Consolidación Pedagógica y Teleeducación',
-    summary: 'Diseño e integración curricular de objetos y mediaciones tecnológicas en la práctica docente.',
-    fullText: 'Durante el 2004 se fortaleció la integración curricular de mediaciones tecnológicas y objetos de aprendizaje interactivos en el plan de estudios de la Especialización, promoviendo la investigación formativa en el aula.',
-    highlight: false,
-  },
-
-  // ─────────────────────────────────────────────
-  // 2006
-  // ─────────────────────────────────────────────
-  {
-    id: 'ev-2006-tic',
-    year: 2006,
-    yearDisplay: '2006',
-    title: 'Investigación en TIC y Didáctica Tecnológica en el Distrito',
-    category: 'investigacion',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '2000-2009',
-    periodLabel: 'Consolidación Pedagógica y Teleeducación',
-    summary: 'Desarrollo de proyectos de innovación pedagógica con tecnologías de la información y la comunicación en instituciones educativas.',
-    fullText: 'En el año 2006 se articularon proyectos de innovación pedagógica orientados al uso crítico y reflexivo de las TIC en la educación básica y media, con participación activa de docentes y estudiantes del posgrado.',
-    highlight: false,
-  },
-
-  // ─────────────────────────────────────────────
-  // 2007
-  // ─────────────────────────────────────────────
-  {
-    id: 'ev-2007-semillero',
-    year: 2007,
-    yearDisplay: '2007',
-    title: 'Fortalecimiento de Semilleros y Articulación Curricular',
-    category: 'investigacion',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '2000-2009',
-    periodLabel: 'Consolidación Pedagógica y Teleeducación',
-    summary: 'Consolidación de semilleros de investigación adscritos a DIDACTEC y articulación de trabajos de grado con necesidades del sector educativo.',
-    fullText: 'En 2007 se dinamizó la vinculación de estudiantes de la Especialización a semilleros de investigación de DIDACTEC, produciendo trabajos de grado orientados a resolver problemáticas reales de la educación en tecnología.',
-    highlight: false,
-  },
-
-  // ─────────────────────────────────────────────
-  // 2008 (200⁸)
-  // ─────────────────────────────────────────────
-  {
-    id: 'ev-2008-didactec',
-    year: 2008,
-    yearDisplay: '200⁸',
-    title: 'Reconocimiento y Actualización de Líneas de Investigación DIDACTEC',
-    category: 'investigacion',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '2000-2009',
-    periodLabel: 'Consolidación Pedagógica y Teleeducación',
-    summary: 'Evaluación y actualización de las líneas de investigación pedagógica y tecnológica con miras a la creación de posgrados de maestría.',
-    fullText: 'En el año 2008, el grupo de investigación DIDACTEC y el comité curricular de la Especialización realizaron una profunda evaluación de sus líneas de investigación, estableciendo las bases temáticas e investigativas para la futura formulación de la Maestría en Educación en Tecnología.',
-    highlight: true,
-  },
-
-  // ─────────────────────────────────────────────
-  // 2009
-  // ─────────────────────────────────────────────
-  {
-    id: 'ev-2009-maestria-prep',
-    year: 2009,
-    yearDisplay: '2009',
-    title: 'Formulación Académica de la Maestría en Educación en Tecnología',
-    category: 'institucional',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '2000-2009',
-    periodLabel: 'Consolidación Pedagógica y Teleeducación',
-    summary: 'Estructuración del documento maestro preliminar y consolidación del Programa Académico Transversal.',
-    fullText: 'En 2009 se finalizó la estructuración del documento maestro para el trámite institucional de la Maestría en Educación en Tecnología, fundamentado en la trayectoria de 18 años de la Especialización y la producción de DIDACTEC.',
-    highlight: false,
-  },
-
-  // ─────────────────────────────────────────────
   // 2010
   // ─────────────────────────────────────────────
   {
@@ -444,7 +318,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     period: '2010-2018',
     periodLabel: 'PAET, Expansión Virtual y Redes',
     summary: 'Autores: Ruth Molina Vasquez, Martha Bonilla Estevez, Ludy Martinez, Deisy Narvaez',
-    fullText: 'Formación De Docentes E Investigación En Redes Virtuales De Aprendizaje\n\nAutores: Ruth Molina Vasquez, Martha Bonilla Estevez, Ludy Martinez, Deisy Narvaez.\n\nReferencia APA:\nMolina Vásquez, R., Bonilla Estévez, M., Martínez, L., & Narváez, D. (2011). Formación de docentes e investigación en redes virtuales de aprendizaje. Sección de Publicaciones Universidad Distrital Francisco José de Caldas. ISBN 978-958-8723-01-3. 162 págs.',
+    fullText: 'Formación De Docentes E Investigación En Redes Virtuales De Aprendizaje\n\nAutores: Ruth Molina Vasquez, Martha Bonilla Estevez, Ludy Martinez, Deisy Narvaez',
     highlight: false,
   },
   {
@@ -457,8 +331,8 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     program: 'especializacion',
     period: '2010-2018',
     periodLabel: 'PAET, Expansión Virtual y Redes',
-    summary: 'Autor: Antonio Quintana Ramirez',
-    fullText: 'Enseñanza Del Ingles Y Medios Digitales: Nuevos Retos Y Posibilidades Para La Escuela\n\nAutor: Antonio Quintana Ramirez.\n\nReferencia APA:\nQuintana Ramírez, A. (2011). Enseñanza del inglés y medios digitales: Nuevos retos y posibilidades para la escuela. Fondo Editorial Universidad Distrital. ISBN 978-958-8723-36-5.',
+    summary: 'Autor: Antonio Quintana Ramirez,',
+    fullText: 'Enseñanza Del Ingles Y Medios Digitales: Nuevos Retos Y Posibilidades Para La Escuela\n\nAutor: Antonio Quintana Ramirez,',
     highlight: false,
   },
 
@@ -476,7 +350,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     period: '2010-2018',
     periodLabel: 'PAET, Expansión Virtual y Redes',
     summary: 'Autores: Ruth Molina Vasquez, Sergio Ramiro Briceno Castaneda, Antonio Quintana Ramirez, Andrea Johana Ruiz Anzola, Andres Castellanos Melo',
-    fullText: 'Las aulas invisibles a través de las pantallas. Portátiles e internet en la Escuela : experiencia uno a uno\n\nAutores: Ruth Molina Vasquez, Sergio Ramiro Briceno Castaneda, Antonio Quintana Ramirez, Andrea Johana Ruiz Anzola, Andres Castellanos Melo.\n\nReferencia APA:\nMolina Vásquez, R., Briceño Castañeda, S. R., Quintana Ramírez, A., Ruiz Anzola, A. J., & Castellanos Melo, A. (2012). Las aulas invisibles a través de las pantallas. Portátiles e internet en la Escuela : experiencia uno a uno. Editorial Universidad Distrital Francisco José de Caldas. ISBN 978-958-8782-01.',
+    fullText: 'Las aulas invisibles a través de las pantallas. Portátiles e internet en la Escuela : experiencia uno a uno\n\nAutores: Ruth Molina Vasquez, Sergio Ramiro Briceno Castaneda, Antonio Quintana Ramirez, Andrea Johana Ruiz Anzola, Andres Castellanos Melo',
     highlight: true,
   },
   {
@@ -490,7 +364,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     period: '2010-2018',
     periodLabel: 'PAET, Expansión Virtual y Redes',
     summary: 'Autores: Antonio Quintana Ramirez, Andres Castellanos Melo, Johanna Andrea Ruiz Anzola, Sergio Ramiro Briceno Castaneda, Ruth Molina Vasquez',
-    fullText: 'El Aula Invisible A Través De Las Pantallas\n\nAutores: Antonio Quintana Ramirez, Andres Castellanos Melo, Johanna Andrea Ruiz Anzola, Sergio Ramiro Briceno Castaneda, Ruth Molina Vasquez.\n\nReferencia APA:\nQuintana Ramírez, A., Castellanos Melo, A., Ruiz Anzola, J. A., Briceño Castañeda, S. R., & Molina Vásquez, R. (2012). El aula invisible a través de las pantallas. Editorial Universidad Distrital Francisco José de Caldas. ISBN 978-958-8782-01-0.',
+    fullText: 'El Aula Invisible A Través De Las Pantallas\n\nAutores: Antonio Quintana Ramirez, Andres Castellanos Melo, Johanna Andrea Ruiz Anzola, Sergio Ramiro Briceno Castaneda, Ruth Molina Vasquez',
     highlight: false,
   },
 
@@ -558,7 +432,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     period: '2010-2018',
     periodLabel: 'PAET, Expansión Virtual y Redes',
     summary: 'Autores: Sergio Ramiro Briceno Castaneda, Ruth Molina, Claudia Maria Cardona Londono, Jose Ignacio Palacios Osma, Luisa Fernanda Vargas Tellez, Norberto Novoa Torres',
-    fullText: 'Criterios mínimos: incorporación de aulas virtuales en los programas presenciales\n\nAutores: Sergio Ramiro Briceno Castaneda, Ruth Molina, Claudia Maria Cardona Londono, Jose Ignacio Palacios Osma, Luisa Fernanda Vargas Tellez, Norberto Novoa Torres.\n\nReferencia APA:\nBriceño Castañeda, S. R., Molina, R., Cardona Londoño, C. M., Palacios Osma, J. I., Vargas Téllez, L. F., & Novoa Torres, N. (2015). Criterios mínimos: incorporación de aulas virtuales en los programas presenciales. Fondo Editorial Universidad Distrital Francisco José de Caldas. ISSN/ISBN: 2538-9882.',
+    fullText: 'Criterios mínimos: incorporación de aulas virtuales en los programas presenciales\n\nAutores: Sergio Ramiro Briceno Castaneda, Ruth Molina, Claudia Maria Cardona Londono, Jose Ignacio Palacios Osma, Luisa Fernanda Vargas Tellez, Norberto Novoa Torres',
     highlight: false,
   },
 
@@ -633,7 +507,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     id: 'ev-2020-castilla',
     year: 2020,
     yearDisplay: '2020',
-    title: 'Experiencia en Castilla La Nueva (Premio Riviere)',
+    title: 'Experiencia en Castilla La Nueva',
     category: 'investigacion',
     categoryLabel: 'Especialización en Educación en Tecnología',
     program: 'especializacion',
@@ -650,20 +524,6 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
   {
     id: 'ev-2021-repetic',
     year: 2021,
-    yearDisplay: '2021-2022',
-    title: 'Vinculación formal a Red REPETIC',
-    category: 'redes',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '2019-2026',
-    periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
-    summary: 'vinculación formal de la Maestría y Especialización en Educación en Tecnología a Red REPETIC (Red de Profesorado de Educación Tecnológica e Informática de Colombia).',
-    fullText: '2021-2022: vinculación formal de la Maestría y Especialización en Educación en Tecnología a Red REPETIC (Red de Profesorado de Educación Tecnológica e Informática de Colombia).',
-    highlight: false,
-  },
-  {
-    id: 'ev-2022-repetic',
-    year: 2022,
     yearDisplay: '2021-2022',
     title: 'Vinculación formal a Red REPETIC',
     category: 'redes',
@@ -738,7 +598,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     id: 'ev-mae-2013-propuesta',
     year: 2013,
     yearDisplay: '2013',
-    title: 'Presentación y destacada calificación de la propuesta de Maestría',
+    title: 'Propuesta de Maestría en Educación en Tecnología presentada al MEN',
     category: 'institucional',
     categoryLabel: 'Maestría en Educación en Tecnología',
     program: 'maestria',
@@ -766,7 +626,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     id: 'ev-mae-2014-registro',
     year: 2014,
     yearDisplay: '2014',
-    title: 'Otorgamiento del primer Registro Calificado por parte del MEN',
+    title: 'Otorgamiento del primer Registro Calificado por parte del Ministerio de Educación Nacional',
     category: 'institucional',
     categoryLabel: 'Maestría en Educación en Tecnología',
     program: 'maestria',
@@ -780,7 +640,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     id: 'ev-mae-2015-primera-cohorte',
     year: 2015,
     yearDisplay: '2015',
-    title: 'Primera cohorte de estudiantes de la Maestría',
+    title: 'Recibiendo a su primera cohorte de estudiantes',
     category: 'institucional',
     categoryLabel: 'Maestría en Educación en Tecnología',
     program: 'maestria',
@@ -794,7 +654,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     id: 'ev-mae-2016-acreditacion-ud',
     year: 2016,
     yearDisplay: '2016',
-    title: 'Acreditación Institucional de Alta Calidad de la Universidad Distrital',
+    title: 'La Universidad Distrital obtiene la Acreditación Institucional de Alta Calidad',
     category: 'redes',
     categoryLabel: 'Maestría en Educación en Tecnología',
     program: 'maestria',
@@ -808,7 +668,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     id: 'ev-mae-2018-primeros-egresados',
     year: 2018,
     yearDisplay: '2018',
-    title: 'Primeros egresados de la Maestría',
+    title: 'Se registran los primeros egresados de la Maestría',
     category: 'institucional',
     categoryLabel: 'Maestría en Educación en Tecnología',
     program: 'maestria',
@@ -822,7 +682,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     id: 'ev-mae-2020-virtualidad',
     year: 2020,
     yearDisplay: '2020',
-    title: 'Relevancia de la virtualidad educativa durante la pandemia',
+    title: 'La virtualidad educativa adquiere especial relevancia durante la pandemia',
     category: 'institucional',
     categoryLabel: 'Maestría en Educación en Tecnología',
     program: 'maestria',
@@ -892,7 +752,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     id: 'ev-mae-2023-septima-cohorte',
     year: 2023,
     yearDisplay: '2023',
-    title: 'Séptima cohorte y consolidación como programa virtual',
+    title: 'La MET alcanza su séptima cohorte y consolida su trayectoria como programa virtual',
     category: 'institucional',
     categoryLabel: 'Maestría en Educación en Tecnología',
     program: 'maestria',
@@ -906,7 +766,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     id: 'ev-mae-2025-ecosistemas',
     year: 2025,
     yearDisplay: '2025',
-    title: 'Ecosistemas Virtuales de Aprendizaje',
+    title: 'Migración de entornos virtuales de aprendizaje a creación del concepto de Ecosistemas Virtuales de Aprendizaje',
     category: 'investigacion',
     categoryLabel: 'Maestría en Educación en Tecnología',
     program: 'maestria',
@@ -920,7 +780,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     id: 'ev-mae-2025-innovacion',
     year: 2025,
     yearDisplay: '2025',
-    title: 'Innovación educativa, pensamiento tecnológico y tecnologías digitales',
+    title: 'El programa enfatiza la innovación educativa, el pensamiento tecnológico y las tecnologías digitales',
     category: 'investigacion',
     categoryLabel: 'Maestría en Educación en Tecnología',
     program: 'maestria',
@@ -948,7 +808,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     id: 'ev-mae-2026-egresados',
     year: 2026,
     yearDisplay: '2026',
-    title: 'Balance histórico de egresados de la Maestría',
+    title: '396 egresados',
     category: 'institucional',
     categoryLabel: 'Maestría en Educación en Tecnología',
     program: 'maestria',
@@ -956,6 +816,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
     summary: '396 egresados',
     fullText: '396 egresados',
+    stats: { total: 396 },
     highlight: true,
   },
 
@@ -1192,7 +1053,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
   },
   {
     id: 'ev-did-2005-digitales',
-    year: 2008,
+    year: 2005,
     yearDisplay: '2000–2010',
     title: 'Ampliación hacia las tecnologías digitales y la educación virtual',
     category: 'investigacion',

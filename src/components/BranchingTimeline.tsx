@@ -13,8 +13,6 @@ interface TimelinePoint {
 }
 
 export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNode }) => {
-  const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null);
-
   // Group events by program and year
   const eventsByProgramYear = React.useMemo(() => {
     const map = new Map<string, TimelineEvent[]>();
@@ -143,7 +141,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
   });
 
   // 4. EET 2013 to 2026 Points (2014 to 2025)
-  const eetPostCyanYears = new Set([2014, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]);
+  const eetPostCyanYears = new Set([2014, 2015, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]);
   const eetPost2013Points: TimelinePoint[] = Array.from({ length: 12 }, (_, i) => {
     const yr = 2014 + i;
     return {
@@ -155,7 +153,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
   });
 
   // 5. EDIET Points (2014 to 2025)
-  const edietCyanYears = new Set([2014, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]);
+  const edietCyanYears = new Set([2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]);
   const edietPoints: TimelinePoint[] = Array.from({ length: 12 }, (_, i) => {
     const yr = 2014 + i;
     return {
@@ -214,22 +212,32 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
         className="cursor-pointer group"
         onClick={() => handleNodeClick(item.year, program)}
       >
-        {/* Glow halo when hovered */}
+        {/* Hitbox estática invisible para evitar que el botón titile al mover el cursor */}
+        <rect
+          x={item.x - 22}
+          y={item.isAbove ? yTrack - 38 : yTrack - 10}
+          width="44"
+          height="50"
+          fill="transparent"
+        />
+        {/* Halo luminoso suave al pasar el cursor (sin escalado geométrico para evitar titileo) */}
         <circle
           cx={item.x}
           cy={yTrack}
-          r="12"
+          r="13"
           fill="#00a0e9"
-          className="opacity-0 group-hover:opacity-20 transition-opacity duration-200 pointer-events-none"
+          className="opacity-0 group-hover:opacity-25 transition-opacity duration-150 pointer-events-none"
         />
+        {/* Punto azul estable */}
         <circle
           cx={item.x}
           cy={yTrack}
           r="6.5"
           fill="#00a0e9"
-          className="transition-transform duration-150 group-hover:scale-125"
+          className="transition-colors duration-150 group-hover:fill-sky-500 pointer-events-none"
           filter="url(#subtle-glow)"
         />
+        {/* Texto del año */}
         <text
           x={item.x}
           y={item.isAbove ? yTrack - 16 : yTrack + 26}
@@ -237,7 +245,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
           fontSize="14"
           fontWeight="bold"
           fill="#00a0e9"
-          className="tabular-nums transition-colors group-hover:fill-sky-600"
+          className="tabular-nums transition-colors duration-150 group-hover:fill-sky-700 pointer-events-none select-none"
         >
           {item.year}
         </text>
@@ -402,7 +410,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#ffffff"
                 stroke="#00a0e9"
                 strokeWidth="2"
-                className="transition-all duration-200 group-hover:stroke-sky-600"
+                className="transition-colors duration-150 group-hover:stroke-sky-600 group-hover:fill-sky-50/20"
               />
               <text
                 x="506"
@@ -411,6 +419,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fontSize="23"
                 fontWeight="bold"
                 letterSpacing="0.5"
+                className="pointer-events-none select-none"
               >
                 DIDACTEC
               </text>
@@ -420,6 +429,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#1e293b"
                 fontSize="15"
                 fontWeight="normal"
+                className="pointer-events-none select-none"
               >
                 Grupo de investigación
               </text>
@@ -440,7 +450,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#ffffff"
                 stroke="#00a0e9"
                 strokeWidth="2"
-                className="transition-all duration-200 group-hover:stroke-sky-600"
+                className="transition-colors duration-150 group-hover:stroke-sky-600 group-hover:fill-sky-50/20"
               />
               <text
                 x="148"
@@ -449,6 +459,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fontSize="23"
                 fontWeight="bold"
                 letterSpacing="0.5"
+                className="pointer-events-none select-none"
               >
                 EET
               </text>
@@ -458,6 +469,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#1e293b"
                 fontSize="14"
                 fontWeight="normal"
+                className="pointer-events-none select-none"
               >
                 Especialización en
               </text>
@@ -467,6 +479,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#1e293b"
                 fontSize="14"
                 fontWeight="normal"
+                className="pointer-events-none select-none"
               >
                 Educación en Tecnología
               </text>
@@ -487,7 +500,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#ffffff"
                 stroke="#00a0e9"
                 strokeWidth="2"
-                className="transition-all duration-200 group-hover:stroke-sky-600"
+                className="transition-colors duration-150 group-hover:stroke-sky-600 group-hover:fill-sky-50/20"
               />
               <text
                 x="1164"
@@ -496,6 +509,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fontSize="22"
                 fontWeight="bold"
                 letterSpacing="0.5"
+                className="pointer-events-none select-none"
               >
                 EDIET
               </text>
@@ -505,6 +519,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#1e293b"
                 fontSize="13.5"
                 fontWeight="normal"
+                className="pointer-events-none select-none"
               >
                 Encuentro de Docentes e
               </text>
@@ -514,6 +529,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#1e293b"
                 fontSize="13.5"
                 fontWeight="normal"
+                className="pointer-events-none select-none"
               >
                 Investigadores en Educación
               </text>
@@ -523,6 +539,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#1e293b"
                 fontSize="13.5"
                 fontWeight="normal"
+                className="pointer-events-none select-none"
               >
                 en Tecnología
               </text>
@@ -543,7 +560,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#ffffff"
                 stroke="#00a0e9"
                 strokeWidth="2"
-                className="transition-all duration-200 group-hover:stroke-sky-600"
+                className="transition-colors duration-150 group-hover:stroke-sky-600 group-hover:fill-sky-50/20"
               />
               <text
                 x="1164"
@@ -552,6 +569,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fontSize="22"
                 fontWeight="bold"
                 letterSpacing="0.5"
+                className="pointer-events-none select-none"
               >
                 MET
               </text>
@@ -561,6 +579,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#1e293b"
                 fontSize="14"
                 fontWeight="normal"
+                className="pointer-events-none select-none"
               >
                 Maestría en Educación
               </text>
@@ -570,6 +589,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#1e293b"
                 fontSize="14"
                 fontWeight="normal"
+                className="pointer-events-none select-none"
               >
                 en Tecnología
               </text>
@@ -583,10 +603,10 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
             <g
               className="cursor-pointer group"
               onClick={() => handleNodeClick(1991, 'especializacion')}
-              onMouseEnter={() => setHoveredNodeId('node-1991')}
-              onMouseLeave={() => setHoveredNodeId(null)}
               filter="url(#node-shadow)"
             >
+              {/* Hitbox estática invisible */}
+              <circle cx={X_1991} cy={Y_EET} r="28" fill="transparent" />
               <circle
                 cx={X_1991}
                 cy={Y_EET}
@@ -594,8 +614,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#ffffff"
                 stroke="#00a0e9"
                 strokeWidth="2.5"
-                className="transition-transform group-hover:scale-110"
-                style={{ transformOrigin: `${X_1991}px ${Y_EET}px` }}
+                className="transition-colors duration-150 group-hover:stroke-sky-600 group-hover:fill-cyan-50/70"
               />
               <text
                 x={X_1991}
@@ -604,7 +623,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fontSize="15"
                 fontWeight="bold"
                 fill="#00a0e9"
-                className="tabular-nums"
+                className="tabular-nums transition-colors duration-150 group-hover:fill-sky-700 pointer-events-none select-none"
               >
                 1991
               </text>
@@ -614,10 +633,9 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
             <g
               className="cursor-pointer group"
               onClick={() => handleNodeClick(1999, 'didactec')}
-              onMouseEnter={() => setHoveredNodeId('node-did-1999')}
-              onMouseLeave={() => setHoveredNodeId(null)}
               filter="url(#node-shadow)"
             >
+              <circle cx={X_1999} cy={Y_DIDACTEC} r="28" fill="transparent" />
               <circle
                 cx={X_1999}
                 cy={Y_DIDACTEC}
@@ -625,8 +643,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#ffffff"
                 stroke="#00a0e9"
                 strokeWidth="2.5"
-                className="transition-transform group-hover:scale-110"
-                style={{ transformOrigin: `${X_1999}px ${Y_DIDACTEC}px` }}
+                className="transition-colors duration-150 group-hover:stroke-sky-600 group-hover:fill-cyan-50/70"
               />
               <text
                 x={X_1999}
@@ -635,7 +652,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fontSize="15"
                 fontWeight="bold"
                 fill="#00a0e9"
-                className="tabular-nums"
+                className="tabular-nums transition-colors duration-150 group-hover:fill-sky-700 pointer-events-none select-none"
               >
                 1999
               </text>
@@ -645,10 +662,9 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
             <g
               className="cursor-pointer group"
               onClick={() => handleNodeClick(1999, 'especializacion')}
-              onMouseEnter={() => setHoveredNodeId('node-esp-1999')}
-              onMouseLeave={() => setHoveredNodeId(null)}
               filter="url(#node-shadow)"
             >
+              <circle cx={X_1999} cy={Y_EET} r="28" fill="transparent" />
               <circle
                 cx={X_1999}
                 cy={Y_EET}
@@ -656,8 +672,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#ffffff"
                 stroke="#00a0e9"
                 strokeWidth="2.5"
-                className="transition-transform group-hover:scale-110"
-                style={{ transformOrigin: `${X_1999}px ${Y_EET}px` }}
+                className="transition-colors duration-150 group-hover:stroke-sky-600 group-hover:fill-cyan-50/70"
               />
               <text
                 x={X_1999}
@@ -666,7 +681,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fontSize="15"
                 fontWeight="bold"
                 fill="#00a0e9"
-                className="tabular-nums"
+                className="tabular-nums transition-colors duration-150 group-hover:fill-sky-700 pointer-events-none select-none"
               >
                 1999
               </text>
@@ -676,10 +691,9 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
             <g
               className="cursor-pointer group"
               onClick={() => handleNodeClick(2013, 'especializacion')}
-              onMouseEnter={() => setHoveredNodeId('node-esp-2013')}
-              onMouseLeave={() => setHoveredNodeId(null)}
               filter="url(#node-shadow)"
             >
+              <circle cx={X_2013} cy={Y_EET} r="28" fill="transparent" />
               <circle
                 cx={X_2013}
                 cy={Y_EET}
@@ -687,8 +701,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#ffffff"
                 stroke="#00a0e9"
                 strokeWidth="2.5"
-                className="transition-transform group-hover:scale-110"
-                style={{ transformOrigin: `${X_2013}px ${Y_EET}px` }}
+                className="transition-colors duration-150 group-hover:stroke-sky-600 group-hover:fill-cyan-50/70"
               />
               <text
                 x={X_2013}
@@ -697,7 +710,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fontSize="15"
                 fontWeight="bold"
                 fill="#00a0e9"
-                className="tabular-nums"
+                className="tabular-nums transition-colors duration-150 group-hover:fill-sky-700 pointer-events-none select-none"
               >
                 2013
               </text>
@@ -707,10 +720,9 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
             <g
               className="cursor-pointer group"
               onClick={() => handleNodeClick(2013, 'ediet')}
-              onMouseEnter={() => setHoveredNodeId('node-ediet-2013')}
-              onMouseLeave={() => setHoveredNodeId(null)}
               filter="url(#node-shadow)"
             >
+              <circle cx={X_2013} cy={Y_EDIET} r="28" fill="transparent" />
               <circle
                 cx={X_2013}
                 cy={Y_EDIET}
@@ -718,8 +730,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#ffffff"
                 stroke="#00a0e9"
                 strokeWidth="2.5"
-                className="transition-transform group-hover:scale-110"
-                style={{ transformOrigin: `${X_2013}px ${Y_EDIET}px` }}
+                className="transition-colors duration-150 group-hover:stroke-sky-600 group-hover:fill-cyan-50/70"
               />
               <text
                 x={X_2013}
@@ -728,7 +739,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fontSize="15"
                 fontWeight="bold"
                 fill="#00a0e9"
-                className="tabular-nums"
+                className="tabular-nums transition-colors duration-150 group-hover:fill-sky-700 pointer-events-none select-none"
               >
                 2013
               </text>
@@ -738,10 +749,9 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
             <g
               className="cursor-pointer group"
               onClick={() => handleNodeClick(2013, 'maestria')}
-              onMouseEnter={() => setHoveredNodeId('node-met-2013')}
-              onMouseLeave={() => setHoveredNodeId(null)}
               filter="url(#node-shadow)"
             >
+              <circle cx={X_2013} cy={Y_MET} r="28" fill="transparent" />
               <circle
                 cx={X_2013}
                 cy={Y_MET}
@@ -749,8 +759,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fill="#ffffff"
                 stroke="#00a0e9"
                 strokeWidth="2.5"
-                className="transition-transform group-hover:scale-110"
-                style={{ transformOrigin: `${X_2013}px ${Y_MET}px` }}
+                className="transition-colors duration-150 group-hover:stroke-sky-600 group-hover:fill-cyan-50/70"
               />
               <text
                 x={X_2013}
@@ -759,7 +768,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 fontSize="15"
                 fontWeight="bold"
                 fill="#00a0e9"
-                className="tabular-nums"
+                className="tabular-nums transition-colors duration-150 group-hover:fill-sky-700 pointer-events-none select-none"
               >
                 2013
               </text>
@@ -776,10 +785,9 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                 key={node.id}
                 className="cursor-pointer group"
                 onClick={() => handleNodeClick(2026, node.prog)}
-                onMouseEnter={() => setHoveredNodeId(node.id)}
-                onMouseLeave={() => setHoveredNodeId(null)}
                 filter="url(#node-shadow)"
               >
+                <circle cx={X_2026} cy={node.y} r="28" fill="transparent" />
                 <circle
                   cx={X_2026}
                   cy={node.y}
@@ -787,8 +795,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                   fill="#ffffff"
                   stroke="#00a0e9"
                   strokeWidth="2.5"
-                  className="transition-transform group-hover:scale-110"
-                  style={{ transformOrigin: `${X_2026}px ${node.y}px` }}
+                  className="transition-colors duration-150 group-hover:stroke-sky-600 group-hover:fill-cyan-50/70"
                 />
                 <text
                   x={X_2026}
@@ -797,7 +804,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
                   fontSize="15"
                   fontWeight="bold"
                   fill="#00a0e9"
-                  className="tabular-nums"
+                  className="tabular-nums transition-colors duration-150 group-hover:fill-sky-700 pointer-events-none select-none"
                 >
                   2026
                 </text>

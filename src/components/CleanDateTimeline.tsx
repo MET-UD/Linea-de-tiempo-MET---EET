@@ -115,14 +115,14 @@ export const CleanDateTimeline: React.FC<CleanDateTimelineProps> = ({
                     <button
                       onClick={() => onSelectYear(yr)}
                       aria-label={`Abrir información de la fecha ${displayLabel}`}
-                      className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 cursor-pointer ${
+                      className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors duration-150 cursor-pointer ${
                         isSelected
-                          ? 'bg-gradient-to-tr from-cyan-500 via-sky-500 to-blue-600 border-2 border-white scale-125 shadow-[0_0_24px_rgba(6,182,212,1)] ring-4 ring-cyan-300/60'
-                          : 'bg-white border-2 border-cyan-400 hover:border-cyan-500 hover:scale-120 hover:shadow-[0_0_16px_rgba(6,182,212,0.8)] active:scale-95'
+                          ? 'bg-gradient-to-tr from-cyan-500 via-sky-500 to-blue-600 border-2 border-white shadow-[0_0_24px_rgba(6,182,212,1)] ring-4 ring-cyan-300/60'
+                          : 'bg-white border-2 border-cyan-400 hover:border-cyan-500 hover:shadow-[0_0_16px_rgba(6,182,212,0.8)]'
                       }`}
                     >
                       <span
-                        className={`w-2.5 h-2.5 rounded-full transition-colors ${
+                        className={`w-2.5 h-2.5 rounded-full transition-colors duration-150 ${
                           isSelected ? 'bg-white shadow-[0_0_8px_#ffffff]' : 'bg-cyan-600 group-hover:bg-cyan-400'
                         }`}
                       />
@@ -131,9 +131,9 @@ export const CleanDateTimeline: React.FC<CleanDateTimelineProps> = ({
                     {/* Clickable Date Text */}
                     <button
                       onClick={() => onSelectYear(yr)}
-                      className={`mt-3 font-sans text-sm sm:text-base font-semibold tabular-nums transition-all px-3 py-1 rounded-xl cursor-pointer ${
+                      className={`mt-3 font-sans text-sm sm:text-base font-semibold tabular-nums transition-colors duration-150 px-3 py-1 rounded-xl cursor-pointer ${
                         isSelected
-                          ? 'bg-gradient-to-r from-cyan-600 via-sky-600 to-blue-600 text-white shadow-lg shadow-cyan-500/30 scale-105'
+                          ? 'bg-gradient-to-r from-cyan-600 via-sky-600 to-blue-600 text-white shadow-lg shadow-cyan-500/30'
                           : 'text-slate-600 hover:text-cyan-800 hover:bg-cyan-50/80'
                       }`}
                     >
