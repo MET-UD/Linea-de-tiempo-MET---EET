@@ -105,7 +105,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
   };
 
   // 1. DIDACTEC Points (2000 to 2025)
-  const didactecCyanYears = new Set([2000, 2005, 2010, 2012, 2014, 2018, 2020, 2021, 2022, 2024]);
+  const didactecCyanYears = new Set([2000, 2002, 2005, 2006, 2010, 2012, 2014, 2018, 2019, 2020, 2021, 2022, 2025]);
   const didactecPoints: TimelinePoint[] = Array.from({ length: 26 }, (_, i) => {
     const yr = 2000 + i;
     return {
@@ -117,7 +117,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
   });
 
   // 2. EET Pre-1999 Points (1992 to 1998)
-  const eetPre1999CyanYears = new Set([1992, 1997]);
+  const eetPre1999CyanYears = new Set([1992, 1998]);
   const eetPre1999Points: TimelinePoint[] = Array.from({ length: 7 }, (_, i) => {
     const yr = 1992 + i;
     return {
@@ -129,7 +129,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
   });
 
   // 3. EET 1999 to 2013 Points (2000 to 2012)
-  const eetMidCyanYears = new Set([2000, 2001, 2002, 2010, 2011, 2012]);
+  const eetMidCyanYears = new Set([2000, 2005, 2010, 2011, 2012]);
   const eet1999To2013Points: TimelinePoint[] = Array.from({ length: 13 }, (_, i) => {
     const yr = 2000 + i;
     return {
@@ -141,7 +141,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
   });
 
   // 4. EET 2013 to 2026 Points (2014 to 2025)
-  const eetPostCyanYears = new Set([2014, 2015, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]);
+  const eetPostCyanYears = new Set([2014, 2015, 2019, 2023]);
   const eetPost2013Points: TimelinePoint[] = Array.from({ length: 12 }, (_, i) => {
     const yr = 2014 + i;
     return {
@@ -165,7 +165,7 @@ export const BranchingTimeline: React.FC<BranchingTimelineProps> = ({ onSelectNo
   });
 
   // 6. MET Points (2014 to 2025)
-  const metCyanYears = new Set([2014, 2015, 2016, 2018, 2020, 2021, 2023, 2025]);
+  const metCyanYears = new Set([2014, 2016, 2018, 2019, 2020, 2021, 2023, 2025]);
   const metPoints: TimelinePoint[] = Array.from({ length: 12 }, (_, i) => {
     const yr = 2014 + i;
     return {

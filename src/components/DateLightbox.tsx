@@ -137,12 +137,11 @@ export const DateLightbox: React.FC<DateLightboxProps> = ({
                 {/* Luminous blue top hairline */}
                 <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 rounded-t-2xl" />
 
-                {/* Main content: Texto en negrilla seguida de dos puntos y explicación */}
-                <div className="p-5 sm:p-6 bg-white rounded-xl border border-slate-200/80 text-slate-800 text-sm sm:text-base leading-relaxed shadow-2xs">
-                  <strong className="font-bold text-slate-900 text-base sm:text-lg">{ev.title}: </strong>
-                  <span className="text-slate-700 whitespace-pre-line leading-relaxed">
-                    {getCleanExplanation(ev.title, ev.fullText)}
-                  </span>
+                {/* Main content: Formato regular sin negrilla */}
+                <div className="p-5 sm:p-6 bg-white rounded-xl border border-slate-200/80 text-slate-700 text-sm sm:text-base font-normal leading-relaxed shadow-2xs">
+                  <p className="font-normal text-slate-700 whitespace-pre-line leading-relaxed">
+                    {ev.fullText}
+                  </p>
                 </div>
               </article>
             );

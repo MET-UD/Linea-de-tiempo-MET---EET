@@ -108,9 +108,9 @@ export const PERIOD_CONFIG: Record<
 };
 
 export const TIMELINE_EVENTS: TimelineEvent[] = [
-  // ─────────────────────────────────────────────
-  // 1991
-  // ─────────────────────────────────────────────
+  // ═════════════════════════════════════════════
+  // ESPECIALIZACIÓN EN EDUCACIÓN EN TECNOLOGÍA
+  // ═════════════════════════════════════════════
   {
     id: 'ev-1991',
     year: 1991,
@@ -125,10 +125,6 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     fullText: 'Primeras inquietudes de docentes alrededor de la educación en tecnología, estimuladas por la Ley General de Educación y las orientaciones del MEN.',
     highlight: false,
   },
-
-  // ─────────────────────────────────────────────
-  // 1992
-  // ─────────────────────────────────────────────
   {
     id: 'ev-1992',
     year: 1992,
@@ -139,18 +135,14 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     program: 'especializacion',
     period: '1991-1999',
     periodLabel: 'Génesis y Creación Institucional',
-    summary: 'La Universidad Distrital se consolida como pionera nacional al participar en proyectos colaborativos como el programa PE 21 con el MEN y el proyecto Prodet con la Secretaría de Educación de Bogotá.',
-    fullText: 'La Universidad Distrital se consolida como pionera nacional al participar en proyectos colaborativos como el programa PE 21 con el MEN y el proyecto Prodet con la Secretaría de Educación de Bogotá.',
+    summary: 'La Universidad Distrital se consolida como pionera nacional al participar en proyectos colaborativos como el programa PET 21 con el MEN y el proyecto Prodet con la Secretaría de Educación de Bogotá.',
+    fullText: 'La Universidad Distrital se consolida como pionera nacional al participar en proyectos colaborativos como el programa PET 21 con el MEN y el proyecto Prodet con la Secretaría de Educación de Bogotá.',
     highlight: true,
   },
-
-  // ─────────────────────────────────────────────
-  // 1997
-  // ─────────────────────────────────────────────
   {
-    id: 'ev-1997-creacion',
-    year: 1997,
-    yearDisplay: '1997',
+    id: 'ev-1998-creacion',
+    year: 1998,
+    yearDisplay: '1998',
     title: 'Creación institucional de la Especialización',
     category: 'institucional',
     categoryLabel: 'Especialización en Educación en Tecnología',
@@ -162,23 +154,19 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     highlight: true,
   },
   {
-    id: 'ev-1997-inicio-clases',
-    year: 1997,
-    yearDisplay: '1997',
+    id: 'ev-1998-inicio-clases',
+    year: 1998,
+    yearDisplay: '1998',
     title: 'Inicio de clases',
     category: 'institucional',
     categoryLabel: 'Especialización en Educación en Tecnología',
     program: 'especializacion',
     period: '1991-1999',
     periodLabel: 'Génesis y Creación Institucional',
-    summary: 'Comienzan formalmente las actividades académicas del programa bajo la coordinación del profesor Ángel Alonso Soto y un equipo docente especialista.',
-    fullText: 'Inicio de clases: Comienzan formalmente las actividades académicas del programa bajo la coordinación del profesor Ángel Alonso Soto y un equipo docente especialista.',
+    summary: 'Inicio de clases de la Especialización en Educación en Tecnología.',
+    fullText: 'Inicio de clases',
     highlight: false,
   },
-
-  // ─────────────────────────────────────────────
-  // 2000
-  // ─────────────────────────────────────────────
   {
     id: 'ev-2000-investigacion',
     year: 2000,
@@ -193,88 +181,20 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     fullText: 'Investigación, modelo 1 a 1 y consolidación conceptual',
     highlight: true,
   },
-
-  // ─────────────────────────────────────────────
-  // 2001
-  // ─────────────────────────────────────────────
   {
-    id: 'ev-2001',
-    year: 2001,
-    yearDisplay: '2001',
-    title: 'Construcción de un modelo pedagógico alternativo a partir de la pedagogía',
+    id: 'ev-2005-hiperhistorias',
+    year: 2005,
+    yearDisplay: '2005',
+    title: 'Investigación de maestros y estudiantes escritores de hiperhistorias',
     category: 'publicacion',
     categoryLabel: 'Especialización en Educación en Tecnología',
     program: 'especializacion',
     period: '2000-2009',
     periodLabel: 'Consolidación Pedagógica y Teleeducación',
-    summary: 'Autores: Ruth Molina Vásquez, Francisco Perea Mosquera, Carlos Juliao Vargas, Miguel Ángel Téllez y Margoth Acosta. Referencia APA',
-    fullText: 'Construcción de un modelo pedagógico alternativo a partir de la pedagogía\n\nAutores: Ruth Molina Vásquez, Francisco Perea Mosquera, Carlos Juliao Vargas, Miguel Ángel Téllez y Margoth Acosta.\n\nReferencia APA:\nMolina Vásquez, R., Perea Mosquera, F., Juliao Vargas, C., Téllez, M. Á., & Acosta, M. (2001). Construcción de un modelo pedagógico alternativo a partir de la pedagogía. Corporación Universitaria Minuto de Dios - UNIMINUTO. ISBN 958-96794-7-1.',
+    summary: 'Autores: Antonio Quintana Ramirez, Amparo Clavijo Olarte',
+    fullText: 'Investigación de maestros y estudiantes escritores de hiperhistorias\n\nAutores: Antonio Quintana Ramirez, Amparo Clavijo Olarte',
     highlight: false,
   },
-
-  // ─────────────────────────────────────────────
-  // 2002
-  // ─────────────────────────────────────────────
-  {
-    id: 'ev-2002-curricular',
-    year: 2002,
-    yearDisplay: '2002',
-    title: 'Modelo curricular de teleeducación, producción de material didáctico computarizado',
-    category: 'publicacion',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '2000-2009',
-    periodLabel: 'Consolidación Pedagógica y Teleeducación',
-    summary: 'Autores: Ruth Molina Vásquez, Napoleón Ramírez Gutiérrez, Jairo Cortés Méndez, Mario Contreras Castro, Clara Inés Buriticá Arboleda y Jorge Ramírez Escobar. Referencia APA',
-    fullText: 'Modelo curricular de teleeducación, producción de material didáctico computarizado\n\nAutores: Ruth Molina Vásquez, Napoleón Ramírez Gutiérrez, Jairo Cortés Méndez, Mario Contreras Castro, Clara Inés Buriticá Arboleda y Jorge Ramírez Escobar.\n\nReferencia APA:\nMolina Vásquez, R., Ramírez Gutiérrez, N., Cortés Méndez, J., Contreras Castro, M., Buriticá Arboleda, C. I., & Ramírez Escobar, J. (2002). Modelo curricular de teleeducación, producción de material didáctico computarizado. Instituto Colombiano para el Desarrollo de la Ciencia y la Tecnología Francisco José de Caldas.',
-    highlight: false,
-  },
-  {
-    id: 'ev-2002-pedagogico',
-    year: 2002,
-    yearDisplay: '2002',
-    title: 'Modelo pedagógico didáctico de teleeducación',
-    category: 'publicacion',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '2000-2009',
-    periodLabel: 'Consolidación Pedagógica y Teleeducación',
-    summary: 'Autores: Ruth Molina Vásquez, Napoleón Ramírez Gutiérrez, Jairo Cortés Méndez, Mario Contreras Castro, Clara Inés Buriticá Arboleda y Jorge Ramírez Escobar. Referencia APA.',
-    fullText: 'Modelo pedagógico didáctico de teleeducación\n\nAutores: Ruth Molina Vásquez, Napoleón Ramírez Gutiérrez, Jairo Cortés Méndez, Mario Contreras Castro, Clara Inés Buriticá Arboleda y Jorge Ramírez Escobar.\n\nReferencia APA:\nMolina Vásquez, R., Ramírez Gutiérrez, N., Cortés Méndez, J., Contreras Castro, M., Buriticá Arboleda, C. I., & Ramírez Escobar, J. (2002). Modelo pedagógico didáctico de teleeducación. Instituto Colombiano para el Desarrollo de la Ciencia y la Tecnología Francisco José de Caldas.',
-    highlight: false,
-  },
-  {
-    id: 'ev-2002-gestion',
-    year: 2002,
-    yearDisplay: '2002',
-    title: 'Modelo de gestión del prototipo de tele educación en la producción de material didáctico computarizado',
-    category: 'publicacion',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '2000-2009',
-    periodLabel: 'Consolidación Pedagógica y Teleeducación',
-    summary: 'Autores: Ruth Molina Vásquez, Napoleón Ramírez Gutiérrez, Jairo Cortés Méndez, Mario Contreras Castro, Clara Inés Buriticá Arboleda y Jorge Ramírez Escobar. Referencia APA.',
-    fullText: 'Modelo de gestión del prototipo de tele educación en la producción de material didáctico computarizado\n\nAutores: Ruth Molina Vásquez, Napoleón Ramírez Gutiérrez, Jairo Cortés Méndez, Mario Contreras Castro, Clara Inés Buriticá Arboleda y Jorge Ramírez Escobar.\n\nReferencia APA:\nMolina Vásquez, R., Ramírez Gutiérrez, N., Cortés Méndez, J., Contreras Castro, M., Buriticá Arboleda, C. I., & Ramírez Escobar, J. (2002). Modelo de gestión del prototipo de teleeducación en la producción de material didáctico computarizado. Instituto Colombiano para el Desarrollo de la Ciencia y la Tecnología Francisco José de Caldas.',
-    highlight: false,
-  },
-  {
-    id: 'ev-2002-tecnologico',
-    year: 2002,
-    yearDisplay: '2002',
-    title: 'Modelo tecnológico de teleeducación',
-    category: 'publicacion',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '2000-2009',
-    periodLabel: 'Consolidación Pedagógica y Teleeducación',
-    summary: 'Autores: Ruth Molina Vásquez, Napoleón Ramírez Gutiérrez, Jairo Cortés Méndez, Mario Contreras Castro, Clara Inés Buriticá Arboleda y Jorge Ramírez Escobar. Referencia APA',
-    fullText: 'Modelo tecnológico de teleeducación\n\nAutores: Ruth Molina Vásquez, Napoleón Ramírez Gutiérrez, Jairo Cortés Méndez, Mario Contreras Castro, Clara Inés Buriticá Arboleda y Jorge Ramírez Escobar.\n\nReferencia APA:\nMolina Vásquez, R., Ramírez Gutiérrez, N., Cortés Méndez, J., Contreras Castro, M., Buriticá Arboleda, C. I., & Ramírez Escobar, J. (2002). Modelo tecnológico de teleeducación. Instituto Colombiano para el Desarrollo de la Ciencia y la Tecnología Francisco José de Caldas.',
-    highlight: false,
-  },
-
-  // ─────────────────────────────────────────────
-  // 2010
-  // ─────────────────────────────────────────────
   {
     id: 'ev-2010-redes',
     year: 2010,
@@ -286,7 +206,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     period: '2010-2018',
     periodLabel: 'PAET, Expansión Virtual y Redes',
     summary: 'Autor: Sergio Ramiro Briceño Castañeda. Referencia APA',
-    fullText: 'Redes virtuales de aprendizaje: Una experiencia de formación con docentes\n\nAutor: Sergio Ramiro Briceño Castañeda.\n\nReferencia APA:\nBriceño Castañeda, S. R. (2010). Redes virtuales de aprendizaje: Una experiencia de formación con docentes. Centro de Investigaciones y Desarrollo Científico (CIDC), Universidad Distrital Francisco José de Caldas. ISBN 978-958-8337-82-1.',
+    fullText: 'Redes virtuales de aprendizaje: Una experiencia de formación con docentes\n\nAutor: Sergio Ramiro Briceño Castañeda. Referencia APA',
     highlight: false,
   },
   {
@@ -303,10 +223,20 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     fullText: 'Institucionalización del PAET: A través de la Resolución N° 021, se avala la operación del Programa Académico Transversal de Educación en Tecnología (PAET) en la Facultad de Ciencias y Educación.',
     highlight: true,
   },
-
-  // ─────────────────────────────────────────────
-  // 2011
-  // ─────────────────────────────────────────────
+  {
+    id: 'ev-2010-planestic-convocados',
+    year: 2010,
+    yearDisplay: '2010',
+    title: 'Participación en el proyecto interinstitucional PlanEsTIC-UD',
+    category: 'institucional',
+    categoryLabel: 'Especialización en Educación en Tecnología',
+    program: 'especializacion',
+    period: '2010-2018',
+    periodLabel: 'PAET, Expansión Virtual y Redes',
+    summary: 'Somos convocados para participar en el proyecto interinstitucional PlanEsTIC-UD',
+    fullText: 'Somos convocados para participar en el proyecto interinstitucional PlanEsTIC-UD',
+    highlight: false,
+  },
   {
     id: 'ev-2011-redes',
     year: 2011,
@@ -325,20 +255,16 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     id: 'ev-2011-ingles',
     year: 2011,
     yearDisplay: '2011',
-    title: 'Enseñanza Del Ingles Y Medios Digitales: Nuevos Retos Y Posibilidades Para La Escuela',
+    title: 'Investigación Enseñanza Del Ingles Y Medios Digitales: Nuevos Retos Y Posibilidades Para La Escuela',
     category: 'publicacion',
     categoryLabel: 'Especialización en Educación en Tecnología',
     program: 'especializacion',
     period: '2010-2018',
     periodLabel: 'PAET, Expansión Virtual y Redes',
-    summary: 'Autor: Antonio Quintana Ramirez,',
-    fullText: 'Enseñanza Del Ingles Y Medios Digitales: Nuevos Retos Y Posibilidades Para La Escuela\n\nAutor: Antonio Quintana Ramirez,',
+    summary: 'Autor: Amparo Clavijo Olarte, Antonio Quintana Ramírez y Luz Mary Quintero',
+    fullText: 'Investigación Enseñanza Del Ingles Y Medios Digitales: Nuevos Retos Y Posibilidades Para La Escuela\n\nAutor: Amparo Clavijo Olarte, Antonio Quintana Ramírez y Luz Mary Quintero',
     highlight: false,
   },
-
-  // ─────────────────────────────────────────────
-  // 2012
-  // ─────────────────────────────────────────────
   {
     id: 'ev-2012-aulas-invisibles',
     year: 2012,
@@ -349,8 +275,8 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     program: 'especializacion',
     period: '2010-2018',
     periodLabel: 'PAET, Expansión Virtual y Redes',
-    summary: 'Autores: Ruth Molina Vasquez, Sergio Ramiro Briceno Castaneda, Antonio Quintana Ramirez, Andrea Johana Ruiz Anzola, Andres Castellanos Melo',
-    fullText: 'Las aulas invisibles a través de las pantallas. Portátiles e internet en la Escuela : experiencia uno a uno\n\nAutores: Ruth Molina Vasquez, Sergio Ramiro Briceno Castaneda, Antonio Quintana Ramirez, Andrea Johana Ruiz Anzola, Andres Castellanos Melo',
+    summary: 'Autores: Ruth Molina Vasquez, Sergio Ramiro Briceño Castaneda, Antonio Quintana Ramirez, Andrea Johana Ruiz Anzola, Andres Castellanos Melo',
+    fullText: 'Las aulas invisibles a través de las pantallas. Portátiles e internet en la Escuela : experiencia uno a uno\n\nAutores: Ruth Molina Vasquez, Sergio Ramiro Briceño Castaneda, Antonio Quintana Ramirez, Andrea Johana Ruiz Anzola, Andres Castellanos Melo',
     highlight: true,
   },
   {
@@ -363,46 +289,24 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     program: 'especializacion',
     period: '2010-2018',
     periodLabel: 'PAET, Expansión Virtual y Redes',
-    summary: 'Autores: Antonio Quintana Ramirez, Andres Castellanos Melo, Johanna Andrea Ruiz Anzola, Sergio Ramiro Briceno Castaneda, Ruth Molina Vasquez',
-    fullText: 'El Aula Invisible A Través De Las Pantallas\n\nAutores: Antonio Quintana Ramirez, Andres Castellanos Melo, Johanna Andrea Ruiz Anzola, Sergio Ramiro Briceno Castaneda, Ruth Molina Vasquez',
+    summary: 'Autores: Antonio Quintana Ramirez, Andres Castellanos Melo, Johanna Andrea Ruiz Anzola, Sergio Ramiro Briceño Castaneda, Ruth Molina Vasquez',
+    fullText: 'El Aula Invisible A Través De Las Pantallas\n\nAutores: Antonio Quintana Ramirez, Andres Castellanos Melo, Johanna Andrea Ruiz Anzola, Sergio Ramiro Briceño Castaneda, Ruth Molina Vasquez',
     highlight: false,
   },
-
-  // ─────────────────────────────────────────────
-  // 2013
-  // ─────────────────────────────────────────────
   {
-    id: 'ev-2013-ediet',
+    id: 'ev-2013-planestic-comite',
     year: 2013,
     yearDisplay: '2013',
-    title: 'Creación del Encuentro de Educadores e Investigadores en Educación en Tecnología y realización del 1 EDIET',
-    category: 'redes',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '2010-2018',
-    periodLabel: 'PAET, Expansión Virtual y Redes',
-    summary: 'Creación del Encuentro de Educadores e Investigadores en Educación en Tecnología y realización del 1 EDIET.',
-    fullText: 'Creación del Encuentro de Educadores e Investigadores en Educación en Tecnología y realización del 1 EDIET.',
-    highlight: true,
-  },
-  {
-    id: 'ev-2013-planestic',
-    year: 2013,
-    yearDisplay: '2013',
-    title: 'El equipo de la EET crea el proyecto PlanEsTIC-UD (Acuerdo No. 001 de 2013)',
+    title: 'Comité Institucional de Educación Virtual PlanEsTIC-UD',
     category: 'institucional',
     categoryLabel: 'Especialización en Educación en Tecnología',
     program: 'especializacion',
     period: '2010-2018',
     periodLabel: 'PAET, Expansión Virtual y Redes',
-    summary: 'El equipo de la EET crea el proyecto PlanEsTIC-UD (Acuerdo No. 001 de 2013)',
-    fullText: 'El equipo de la EET crea el proyecto PlanEsTIC-UD (Acuerdo No. 001 de 2013)',
+    summary: 'Se institucionaliza como comité institucional de educación virtual PlanEsTIC-UD (Acuerdo No. 001 de 2013)',
+    fullText: 'Se institucionaliza como comité institucional de educación virtual PlanEsTIC-UD (Acuerdo No. 001 de 2013)',
     highlight: false,
   },
-
-  // ─────────────────────────────────────────────
-  // 2014
-  // ─────────────────────────────────────────────
   {
     id: 'ev-2014',
     year: 2014,
@@ -417,10 +321,6 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     fullText: 'Período de expansión virtual — Creación de posgrados: Se diseña e implementa la Maestría en Educación en Tecnología en modalidad virtual.',
     highlight: true,
   },
-
-  // ─────────────────────────────────────────────
-  // 2015
-  // ─────────────────────────────────────────────
   {
     id: 'ev-2015',
     year: 2015,
@@ -431,116 +331,40 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     program: 'especializacion',
     period: '2010-2018',
     periodLabel: 'PAET, Expansión Virtual y Redes',
-    summary: 'Autores: Sergio Ramiro Briceno Castaneda, Ruth Molina, Claudia Maria Cardona Londono, Jose Ignacio Palacios Osma, Luisa Fernanda Vargas Tellez, Norberto Novoa Torres',
-    fullText: 'Criterios mínimos: incorporación de aulas virtuales en los programas presenciales\n\nAutores: Sergio Ramiro Briceno Castaneda, Ruth Molina, Claudia Maria Cardona Londono, Jose Ignacio Palacios Osma, Luisa Fernanda Vargas Tellez, Norberto Novoa Torres',
+    summary: 'Autores: Sergio Ramiro Briceño Castañeda, Ruth Molina, Claudia Maria Cardona Londono, Jose Ignacio Palacios Osma, Luisa Fernanda Vargas Tellez, Norberto Novoa Torres',
+    fullText: 'Criterios mínimos: incorporación de aulas virtuales en los programas presenciales\n\nAutores: Sergio Ramiro Briceño Castañeda, Ruth Molina, Claudia Maria Cardona Londono, Jose Ignacio Palacios Osma, Luisa Fernanda Vargas Tellez, Norberto Novoa Torres',
     highlight: false,
   },
-
-  // ─────────────────────────────────────────────
-  // 2018
-  // ─────────────────────────────────────────────
   {
-    id: 'ev-2018',
-    year: 2018,
-    yearDisplay: '2018',
-    title: 'Vinculación a AIA-CTS / Red CTS',
-    category: 'redes',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '2010-2018',
-    periodLabel: 'PAET, Expansión Virtual y Redes',
-    summary: 'vinculación de la especialización y la maestría a AIA-CTS (Asociación Iberoamericana de Ciencia, Tecnología y Sociedad en la Educación en Ciencias / Red CTS).',
-    fullText: 'vinculación de la especialización y la maestría a AIA-CTS (Asociación Iberoamericana de Ciencia, Tecnología y Sociedad en la Educación en Ciencias / Red CTS).',
-    highlight: false,
-  },
-
-  // ─────────────────────────────────────────────
-  // 2019
-  // ─────────────────────────────────────────────
-  {
-    id: 'ev-2019',
+    id: 'ev-2019-estado-arte',
     year: 2019,
     yearDisplay: '2019',
-    title: 'Acreditación de Alta Calidad',
-    category: 'redes',
+    title: 'Investigación El Estado del Arte en las Líneas de Investigación de Educación en Tecnología en la Universidad Distrital Francisco José de Caldas',
+    category: 'investigacion',
     categoryLabel: 'Especialización en Educación en Tecnología',
     program: 'especializacion',
     period: '2019-2026',
     periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
-    summary: 'El Ministerio de Educación Nacional otorga la Acreditación de Alta Calidad al programa mediante la Resolución 9717 de 2019.',
-    fullText: 'Acreditación de Alta Calidad - El Ministerio de Educación Nacional otorga la Acreditación de Alta Calidad al programa mediante la Resolución 9717 de 2019.',
-    highlight: true,
+    summary: 'Autores: Sergio Ramiro Briceño Castañeda',
+    fullText: 'Investigación El Estado del Arte en las Líneas de Investigación de Educación en Tecnología en la Universidad Distrital Francisco José de Caldas\n\nAutores: Sergio Ramiro Briceño Castañeda',
+    highlight: false,
   },
-
-  // ─────────────────────────────────────────────
-  // 2020
-  // ─────────────────────────────────────────────
   {
-    id: 'ev-2020-registro',
-    year: 2020,
-    yearDisplay: '2020',
+    id: 'ev-2023-registro',
+    year: 2023,
+    yearDisplay: '2023',
     title: 'Renovación de Registro Calificado',
     category: 'institucional',
     categoryLabel: 'Especialización en Educación en Tecnología',
     program: 'especializacion',
     period: '2019-2026',
     periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
-    summary: 'Se expide la Resolución 017487 de 2020 del Ministerio de Educación Nacional, renovando la oferta oficial del programa académico.',
-    fullText: 'Renovación de Registro Calificado - Se expide la Resolución 017487 de 2020 del Ministerio de Educación Nacional, renovando la oferta oficial del programa académico.',
+    summary: 'Se expide la Resolución 021513 noviembre 17 de 2023 del Ministerio de Educación Nacional, renovando la oferta oficial del programa académico.',
+    fullText: 'Renovación de Registro Calificado - Se expide la Resolución 021513 noviembre 17 de 2023 del Ministerio de Educación Nacional, renovando la oferta oficial del programa académico.',
     highlight: true,
   },
   {
-    id: 'ev-2020-didactec',
-    year: 2020,
-    yearDisplay: '2020',
-    title: 'Grupo DIDACTEC (Didáctica de la tecnología) y Computadores para Educar',
-    category: 'investigacion',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '2019-2026',
-    periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
-    summary: 'Nace el grupo de investigación Didatec, participando en iniciativas de formación e investigación junto al programa Computadores para Educar (Ministerio de TIC y MEN).',
-    fullText: 'Grupo DIDACTEC (Didáctica de la tecnología) y Computadores para Educar: Nace el grupo de investigación Didatec, participando en iniciativas de formación e investigación junto al programa Computadores para Educar (Ministerio de TIC y MEN).',
-    highlight: false,
-  },
-  {
-    id: 'ev-2020-castilla',
-    year: 2020,
-    yearDisplay: '2020',
-    title: 'Experiencia en Castilla La Nueva',
-    category: 'investigacion',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '2019-2026',
-    periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
-    summary: 'Se lidera la primera experiencia formativa e investigativa con el modelo 1 a 1 en el país, obteniendo el segundo puesto en el Premio Nacional de Investigación Riviere.',
-    fullText: 'Experiencia en Castilla La Nueva: Se lidera la primera experiencia formativa e investigativa con el modelo 1 a 1 en el país, obteniendo el segundo puesto en el Premio Nacional de Investigación Riviere.',
-    highlight: false,
-  },
-
-  // ─────────────────────────────────────────────
-  // 2021-2022
-  // ─────────────────────────────────────────────
-  {
-    id: 'ev-2021-repetic',
-    year: 2021,
-    yearDisplay: '2021-2022',
-    title: 'Vinculación formal a Red REPETIC',
-    category: 'redes',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '2019-2026',
-    periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
-    summary: 'vinculación formal de la Maestría y Especialización en Educación en Tecnología a Red REPETIC (Red de Profesorado de Educación Tecnológica e Informática de Colombia).',
-    fullText: '2021-2022: vinculación formal de la Maestría y Especialización en Educación en Tecnología a Red REPETIC (Red de Profesorado de Educación Tecnológica e Informática de Colombia).',
-    highlight: false,
-  },
-
-  // ─────────────────────────────────────────────
-  // 2023
-  // ─────────────────────────────────────────────
-  {
-    id: 'ev-2023',
+    id: 'ev-2023-virtual',
     year: 2023,
     yearDisplay: '2023',
     title: 'Inicio modalidad virtual',
@@ -549,32 +373,10 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     program: 'especializacion',
     period: '2019-2026',
     periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
-    summary: 'inicio modalidad virtual mediante la Resolución de Registro Calificado N° 010820 del 7 de julio de 2023 (con código SNIES 116205) ofertando para sus primeras cohortes entre los periodos académicos 2024 y 2025-1.',
-    fullText: 'inicio modalidad virtual mediante la Resolución de Registro Calificado N° 010820 del 7 de julio de 2023 (con código SNIES 116205) ofertando para sus primeras cohortes entre los periodos académicos 2024 y 2025-1.',
+    summary: 'inicio modalidad virtual mediante la Resolución 010820 de julio 7 de 2023 (con código SNIES 116205) ofertando para sus primeras cohortes entre los periodos académicos 2024 y 2025-1.',
+    fullText: 'inicio modalidad virtual mediante la Resolución 010820 de julio 7 de 2023 (con código SNIES 116205) ofertando para sus primeras cohortes entre los periodos académicos 2024 y 2025-1.',
     highlight: true,
   },
-
-  // ─────────────────────────────────────────────
-  // 2024
-  // ─────────────────────────────────────────────
-  {
-    id: 'ev-2024',
-    year: 2024,
-    yearDisplay: '2024',
-    title: 'Categoría A en Minciencias — Grupo de Investigación DIDACTEC',
-    category: 'investigacion',
-    categoryLabel: 'Especialización en Educación en Tecnología',
-    program: 'especializacion',
-    period: '2019-2026',
-    periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
-    summary: 'El grupo de investigación institucional asociado al programa (DIDACTEC — Didáctica de la Tecnología) alcanzó la Categoría A en Minciencias en la Convocatoria Nacional de Minciencias de 2021 (reconocida y mantenida en la convocatoria 2024).',
-    fullText: 'El grupo de investigación institucional asociado al programa (DIDACTEC — Didáctica de la Tecnología) alcanzó la Categoría A en Minciencias en la Convocatoria Nacional de Minciencias de 2021 (reconocida y mantenida en la convocatoria 2024).',
-    highlight: true,
-  },
-
-  // ─────────────────────────────────────────────
-  // 2026
-  // ─────────────────────────────────────────────
   {
     id: 'ev-2026',
     year: 2026,
@@ -592,13 +394,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
   },
 
   // ═════════════════════════════════════════════
-  // EVENTOS DE LA MAESTRÍA EN EDUCACIÓN EN TECNOLOGÍA
+  // MAESTRÍA EN EDUCACIÓN EN TECNOLOGÍA
   // ═════════════════════════════════════════════
   {
     id: 'ev-mae-2013-propuesta',
     year: 2013,
     yearDisplay: '2013',
-    title: 'Propuesta de Maestría en Educación en Tecnología presentada al MEN',
+    title: 'Propuesta de Maestría presentada al MEN',
     category: 'institucional',
     categoryLabel: 'Maestría en Educación en Tecnología',
     program: 'maestria',
@@ -637,9 +439,9 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     highlight: true,
   },
   {
-    id: 'ev-mae-2015-primera-cohorte',
-    year: 2015,
-    yearDisplay: '2015',
+    id: 'ev-mae-2016-primera-cohorte',
+    year: 2016,
+    yearDisplay: '2016',
     title: 'Recibiendo a su primera cohorte de estudiantes',
     category: 'institucional',
     categoryLabel: 'Maestría en Educación en Tecnología',
@@ -676,6 +478,48 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     periodLabel: 'PAET, Expansión Virtual y Redes',
     summary: 'Se registran los primeros egresados de la Maestría.',
     fullText: 'Se registran los primeros egresados de la Maestría.',
+    highlight: true,
+  },
+  {
+    id: 'ev-mae-2018-aia-cts',
+    year: 2018,
+    yearDisplay: '2018',
+    title: 'Vinculación a AIA-CTS / Red CTS',
+    category: 'redes',
+    categoryLabel: 'Maestría en Educación en Tecnología',
+    program: 'maestria',
+    period: '2010-2018',
+    periodLabel: 'PAET, Expansión Virtual y Redes',
+    summary: 'vinculación de la especialización y la maestría a AIA-CTS (Asociación Iberoamericana de Ciencia, Tecnología y Sociedad en la Educación en Ciencias / Red CTS).',
+    fullText: 'vinculación de la especialización y la maestría a AIA-CTS (Asociación Iberoamericana de Ciencia, Tecnología y Sociedad en la Educación en Ciencias / Red CTS).',
+    highlight: false,
+  },
+  {
+    id: 'ev-mae-2019-repetic',
+    year: 2019,
+    yearDisplay: '2019',
+    title: 'Vinculación formal a Red REPETIC',
+    category: 'redes',
+    categoryLabel: 'Maestría en Educación en Tecnología',
+    program: 'maestria',
+    period: '2019-2026',
+    periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
+    summary: 'vinculación formal de la Maestría y Especialización en Educación en Tecnología a Red REPETIC (Red de Profesorado de Educación Tecnológica e Informática de Colombia).',
+    fullText: 'vinculación formal de la Maestría y Especialización en Educación en Tecnología a Red REPETIC (Red de Profesorado de Educación Tecnológica e Informática de Colombia).',
+    highlight: false,
+  },
+  {
+    id: 'ev-mae-2019-orientaciones',
+    year: 2019,
+    yearDisplay: '2019-2022',
+    title: 'Participación en política de orientaciones curriculares MEN',
+    category: 'investigacion',
+    categoryLabel: 'Maestría en Educación en Tecnología',
+    program: 'maestria',
+    period: '2019-2026',
+    periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
+    summary: 'Participación como autores en la política nacional del Ministerio de Educación de orientaciones curriculares para el área de tecnología e informática para educación básica y media',
+    fullText: 'Participación como autores en la política nacional del Ministerio de Educación de orientaciones curriculares para el área de tecnología e informática para educación básica y media',
     highlight: true,
   },
   {
@@ -795,7 +639,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     year: 2026,
     yearDisplay: '2026',
     title: 'Presentación del documento de acreditación de alta calidad',
-    category: 'redes',
+    category: 'institucional',
     categoryLabel: 'Maestría en Educación en Tecnología',
     program: 'maestria',
     period: '2019-2026',
@@ -987,8 +831,8 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     program: 'ediet',
     period: '2019-2026',
     periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
-    summary: 'Undécima edición con publicación especial de memorias en la revista TechNE.',
-    fullText: 'XI Encuentro de Docentes e Investigadores en Educación en Tecnología (XI EDIET). Undécima edición con publicación especial de memorias en la revista TechNE.',
+    summary: 'Undécima edición realizada en noviembre de 2025.',
+    fullText: 'XI Encuentro de Docentes e Investigadores en Educación en Tecnología (XI EDIET). Undécima edición realizada en noviembre de 2025.',
     highlight: true,
   },
   {
@@ -1003,6 +847,20 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
     summary: 'Duodécima edición del encuentro académico.',
     fullText: 'XII Encuentro de Docentes e Investigadores en Educación en Tecnología (XII EDIET). Duodécima edición del encuentro académico.',
+    highlight: true,
+  },
+  {
+    id: 'ev-ediet-2026-xiii',
+    year: 2026,
+    yearDisplay: '2026',
+    title: 'XIII Encuentro de Docentes e Investigadores en Educación en Tecnología (XIII EDIET)',
+    category: 'redes',
+    categoryLabel: 'Encuentro de Docentes e Investigadores en Educación en Tecnología - EDIET',
+    program: 'ediet',
+    period: '2019-2026',
+    periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
+    summary: 'Decimotercera edición del encuentro académico.',
+    fullText: 'XIII Encuentro de Docentes e Investigadores en Educación en Tecnología (XIII EDIET). Duodécima edición del encuentro académico.',
     highlight: true,
   },
 
@@ -1038,21 +896,21 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     highlight: true,
   },
   {
-    id: 'ev-did-2005-investigaciones',
-    year: 2005,
-    yearDisplay: '2000–2005',
-    title: 'Desarrollo de investigaciones sobre enseñanza y aprendizaje de la tecnología',
+    id: 'ev-did-2002-colciencias',
+    year: 2002,
+    yearDisplay: '2002',
+    title: 'Grupo DIDACTEC (Didáctica de la tecnología) es institucionalizado por COLCIENCIAS',
     category: 'investigacion',
     categoryLabel: 'Grupo de investigación DIDACTEC',
     program: 'didactec',
     period: '2000-2009',
     periodLabel: 'Consolidación Pedagógica y Teleeducación',
-    summary: 'Desarrollo de investigaciones sobre enseñanza y aprendizaje de la tecnología.',
-    fullText: 'Desarrollo de investigaciones sobre enseñanza y aprendizaje de la tecnología.',
-    highlight: false,
+    summary: 'Grupo DIDACTEC (Didáctica de la tecnología) es institucionalizado por COLCIENCIAS',
+    fullText: 'Grupo DIDACTEC (Didáctica de la tecnología) es institucionalizado por COLCIENCIAS',
+    highlight: true,
   },
   {
-    id: 'ev-did-2005-digitales',
+    id: 'ev-did-2000-2010-digitales',
     year: 2005,
     yearDisplay: '2000–2010',
     title: 'Ampliación hacia las tecnologías digitales y la educación virtual',
@@ -1063,6 +921,20 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     periodLabel: 'Consolidación Pedagógica y Teleeducación',
     summary: 'Ampliación hacia las tecnologías digitales y la educación virtual.',
     fullText: 'Ampliación hacia las tecnologías digitales y la educación virtual.',
+    highlight: false,
+  },
+  {
+    id: 'ev-did-2002-2010-cpe',
+    year: 2006,
+    yearDisplay: '2002–2010',
+    title: 'Participación en formación de docentes en el programa Computadores para Educar',
+    category: 'investigacion',
+    categoryLabel: 'Grupo de investigación DIDACTEC',
+    program: 'didactec',
+    period: '2000-2009',
+    periodLabel: 'Consolidación Pedagógica y Teleeducación',
+    summary: 'Participación en formación de docentes en el programa Computadores para Educar.',
+    fullText: 'Participación en formación de docentes en el programa Computadores para Educar.',
     highlight: false,
   },
   {
@@ -1092,6 +964,20 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     summary: 'Institucionalización del Programa Académico Transversal de Educación en Tecnología (PAET).',
     fullText: 'Institucionalización del Programa Académico Transversal de Educación en Tecnología (PAET).',
     highlight: true,
+  },
+  {
+    id: 'ev-did-2010-meta-digital',
+    year: 2010,
+    yearDisplay: '2010 - 2011',
+    title: 'Investigación con META digital de formación de docentes en entornos virtuales de aprendizaje y computadores uno a uno',
+    category: 'investigacion',
+    categoryLabel: 'Grupo de investigación DIDACTEC',
+    program: 'didactec',
+    period: '2010-2018',
+    periodLabel: 'PAET, Expansión Virtual y Redes',
+    summary: 'Investigación con META digital de formación de docentes en entornos virtuales de aprendizaje y computadores uno a uno',
+    fullText: 'Investigación con META digital de formación de docentes en entornos virtuales de aprendizaje y computadores uno a uno',
+    highlight: false,
   },
   {
     id: 'ev-did-2012-medios',
@@ -1136,17 +1022,45 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     highlight: true,
   },
   {
-    id: 'ev-did-2020-cts',
-    year: 2020,
-    yearDisplay: '2018–2020',
-    title: 'Vinculación con AIA-CTS / Red CTS',
-    category: 'redes',
+    id: 'ev-did-2019-gestion-calidad',
+    year: 2019,
+    yearDisplay: '2019-2024',
+    title: 'Investigaciones institucionalizadas Gestión de Calidad en la Educación Virtual',
+    category: 'investigacion',
     categoryLabel: 'Grupo de investigación DIDACTEC',
     program: 'didactec',
     period: '2019-2026',
     periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
-    summary: 'Vinculación con AIA-CTS / Red CTS.',
-    fullText: 'Vinculación con AIA-CTS / Red CTS.',
+    summary: 'Investigaciones institucionalizadas Gestión de Calidad en la Educación Virtual',
+    fullText: 'Investigaciones institucionalizadas Gestión de Calidad en la Educación Virtual',
+    highlight: false,
+  },
+  {
+    id: 'ev-did-2020-cpe',
+    year: 2020,
+    yearDisplay: '2020',
+    title: 'Grupo DIDACTEC (Didáctica de la tecnología) y Computadores para Educar',
+    category: 'investigacion',
+    categoryLabel: 'Grupo de investigación DIDACTEC',
+    program: 'didactec',
+    period: '2019-2026',
+    periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
+    summary: 'participando en iniciativas de formación e investigación junto al programa Computadores para Educar (Ministerio de TIC y MEN).',
+    fullText: 'Grupo DIDACTEC (Didáctica de la tecnología) y Computadores para Educar: participando en iniciativas de formación e investigación junto al programa Computadores para Educar (Ministerio de TIC y MEN).',
+    highlight: false,
+  },
+  {
+    id: 'ev-did-2020-castilla',
+    year: 2020,
+    yearDisplay: '2020',
+    title: 'Experiencia en Castilla La Nueva',
+    category: 'investigacion',
+    categoryLabel: 'Grupo de investigación DIDACTEC',
+    program: 'didactec',
+    period: '2019-2026',
+    periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
+    summary: 'Se lidera la primera experiencia formativa e investigativa con el modelo 1 a 1 en el país, obteniendo el segundo puesto en el Premio Nacional de Investigación Riviere.',
+    fullText: 'Experiencia en Castilla La Nueva: Se lidera la primera experiencia formativa e investigativa con el modelo 1 a 1 en el país, obteniendo el segundo puesto en el Premio Nacional de Investigación Riviere.',
     highlight: false,
   },
   {
@@ -1178,17 +1092,32 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     highlight: true,
   },
   {
-    id: 'ev-did-2024-minciencias',
-    year: 2024,
-    yearDisplay: '2024',
-    title: 'DIDACTEC alcanza la Categoría A en Minciencias',
+    id: 'ev-did-2025-minciencias',
+    year: 2025,
+    yearDisplay: '2025',
+    title: 'Categoría A en Minciencias — Grupo de Investigación DIDACTEC',
     category: 'investigacion',
     categoryLabel: 'Grupo de investigación DIDACTEC',
     program: 'didactec',
     period: '2019-2026',
     periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
-    summary: 'DIDACTEC alcanza la Categoría A en Minciencias.',
-    fullText: 'DIDACTEC alcanza la Categoría A en Minciencias.',
+    summary: 'El grupo de investigación institucional asociado al programa (DIDACTEC — Didáctica de la Tecnología) alcanzó la Categoría A en Minciencias en la Convocatoria Nacional de Minciencias de 2021 (reconocida y mantenida en la convocatoria 2024).',
+    fullText: 'El grupo de investigación institucional asociado al programa (DIDACTEC — Didáctica de la Tecnología) alcanzó la Categoría A en Minciencias en la Convocatoria Nacional de Minciencias de 2021 (reconocida y mantenida en la convocatoria 2024).',
+    highlight: true,
+  },
+  {
+    id: 'ev-did-2026-lineas-trabajos',
+    year: 2026,
+    yearDisplay: '2026',
+    title: 'Líneas de investigación del grupo DIDACTEC',
+    category: 'investigacion',
+    categoryLabel: 'Grupo de investigación DIDACTEC',
+    program: 'didactec',
+    period: '2019-2026',
+    periodLabel: 'Alta Calidad, Minciencias y Modalidad Virtual',
+    summary: 'Cantidad de trabajos en cada línea de investigación: Educación en Medios Virtuales: 152 y Didáctica de la tecnología: 109',
+    fullText: 'Líneas de investigación del grupo DIDACTEC\n\nCantidad de trabajos en cada línea de investigación:\n• Educación en Medios Virtuales: 152\n• Didáctica de la tecnología: 109',
+    stats: { total: 261 },
     highlight: true,
   },
   {
