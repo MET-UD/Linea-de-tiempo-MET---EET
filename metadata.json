@@ -1,0 +1,7 @@
+{
+  "name": "Línea de Tiempo: Especialización en Educación en Tecnología",
+  "description": "Línea de tiempo interactiva histórica e institucional de la Especialización en Educación en Tecnología de la Universidad Distrital Francisco José de Caldas (1991 - 2026).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
